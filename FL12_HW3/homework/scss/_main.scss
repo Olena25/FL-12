@@ -1,0 +1,255 @@
+@mixin button {
+    button {
+        background: #e3ac00;
+        width: 100%;
+        max-width: 142px;
+        height: 46px;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-family: map-get($font-family, hind);
+        font-weight: bold;
+        font-size: 15px;
+    }
+}
+
+@include button;
+
+@mixin link {
+    a {
+        color: white;
+        font-size: 15px;
+        font-family: map-get($font-family, hind);
+        font-weight: bold;
+    }
+}
+
+@include link;
+
+.logo__span{
+    display: block;
+    font-size: 13px;
+    text-align: center;
+    font-weight: normal;
+}
+
+body {
+    max-width: 1920px;
+    margin: auto;
+    background: $color;
+    header {
+        background-image: url("../img/m-h-night.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 700px;
+        border-bottom-right-radius: 50em 17em;
+    
+        .header-wrap {
+            padding-top: 20px;
+            padding-left: 190px;
+    
+            .landing-logo {
+                display: flex;
+                align-items: flex-start;
+                font-family: map-get($font-family,fresca);
+                p {
+                    font-size: 20px;
+                    margin: 0px 15px;
+                    color: white;
+                    font-weight: 600;
+                    span{
+                        @extend .logo__span;
+                        color: white;
+                    }
+                }
+            }
+    
+            .header_heading {
+                width: 100%;
+                max-width: 500px;
+                font-size: $fontSizeTitle;
+                font-family: map-get($font-family, sourceSansPro);
+                font-weight: bold;
+                color: white;
+                position: relative;
+                line-height: 70px;               
+            }
+            .header_heading::after{
+                display: inline-block;
+                content:"awesome";
+                background: #ff4e33;;
+                position: absolute;
+                left: 0;
+                bottom: 7px;
+                height: 50px;
+                line-height: 40px;
+            }
+        
+            .header_text {
+                width: 100%;
+                max-width: 655px;
+                color:white;
+                font-size: 16px;
+                font-family: map-get($font-family, fresca);
+                
+            }
+    
+            .header_button {
+                margin-right: 150px;
+            }
+    
+        }
+    }
+    
+    main.section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+        
+        .section_text{
+            position: relative;
+            background-color: #ff4e33;;
+            color: white;
+            font-size: 35px;
+            font-weight: bold;
+            height: 40px;
+            line-height: 50px;
+            font-family: map-get($font-family, sourceSansPro);
+            
+        }
+        .section_text::before {
+            position: absolute;
+            content: 'Welcome to\a0';
+            background: $color;
+          }
+          .section_link{
+              color: #c0c3ce;;
+          }
+          .section_text::after {
+            position: absolute;
+            content: '!';
+            background: $color;
+            right: 0;
+            top: 0;
+          }
+        .section_card_wrap {
+            width: 100%;
+            max-width: 1110px;
+    
+            .section_card {
+                display: flex;
+                align-items: center;
+                background-color: #21232e;
+                margin-bottom: 24px;
+                border-radius: 5px;
+                .section_card_heading{
+                    font-weight: bold;
+                    font-size: 25px;
+                    color: white;
+                    font-family: map-get($font-family, hind);
+                }
+    
+                .section_card_img {
+                    margin: 20px 80px 20px 20px;
+                    width: 430px;
+                    max-width: 100%;
+                    border-radius: 5px;
+                }
+    
+                .section_card_right_container {
+                    width: 100%;
+                    max-width: 470px;
+                   
+                    p:first-child {
+                        text-align: center;
+                    }
+    
+                    a {
+                        display: block;
+                        text-align: center;
+                    }
+    
+                    .section_card_text {
+                        margin: 40px 0px 40px 0px;
+                        color: #c0c3ce;
+                        font-family: map-get($font-family,fresca);
+                    }
+                }
+            }
+        }
+    
+        .section_banner {
+            width: 100%;
+            max-width: 1200px;
+            height: 140px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: linear-gradient(to right, #c07523 35%, #9a384b);
+            border-radius: 5px;
+            position: relative;
+            bottom: -60px;
+            z-index: 1;
+            .section_banner_text_wrap{
+                font-family: map-get($font-family, hind);
+            }
+            .section_banner_text{
+                color:  #c0c3ce;
+                font-family: map-get($font-family, fresca);
+            }
+              .section_banner_heading{
+                display: inline-block;
+                position: relative;
+                color: white;
+                font-size: 20px;
+                margin: 0;
+                font-weight: bold;
+            }
+        
+            .section_banner_heading::before {
+                position: absolute;
+                content: 'start';
+                background: #ff4e33;
+                left: 83px;
+                height: 35px;
+                bottom: 6px;
+                line-height: 50px;
+              }
+        }
+    
+    }
+    
+    footer {
+        .footer-wrap {
+            height: 240px;
+            background-color:  #2c2f3c;
+            color:  #c0c3ce;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: map-get($font-family, fresca);
+            font-size: 14px;
+    
+            .footer_logo {
+                display: flex;
+                align-items: flex-start;
+                p {
+                    margin: 0;
+                    margin-left: 15px;
+                    font-size: 20px;
+                    span {
+                        @extend .logo__span;
+                    }
+                }
+    
+            }
+    
+            .footer_text {
+                width: 100%;
+                max-width: 300px;
+                margin: 0;
+            }
+        }
+    }
+}
