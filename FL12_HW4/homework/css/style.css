@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  width: 100%;
+  max-width: 1600px;
+  margin: auto; }
+  body header {
+    display: flex;
+    font-size: 30px;
+    color: #777; }
+    body header .header__wrap {
+      width: 100%;
+      max-width: 1145px;
+      height: 80px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      body header .header__wrap p {
+        font-size: 30px; }
+      body header .header__wrap ul {
+        display: flex;
+        list-style: none; }
+        body header .header__wrap ul a {
+          text-decoration: none;
+          font-size: 20px;
+          margin-right: 48px;
+          color: #777; }
+          body header .header__wrap ul a:hover {
+            color: #bfba55; }
+  body .wrap__banner {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-image: url("../img/home-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; }
+    body .wrap__banner .banner__text {
+      width: 100%;
+      position: absolute;
+      top: 40.875%;
+      left: 50%;
+      text-align: center;
+      transform: translate(-50%, -40.875%); }
+      body .wrap__banner .banner__text :nth-child(1) {
+        font-size: 50px;
+        color: white;
+        font-weight: bold; }
+      body .wrap__banner .banner__text :nth-child(2) {
+        font-size: 20px;
+        color: white;
+        font-size: 11px;
+        color: #bfba55;
+        margin-top: 30px; }
+      body .wrap__banner .banner__text button {
+        background-color: white;
+        color: #777;
+        border: 1px solid;
+        border-radius: 25px;
+        padding: 17px 25px 17px 25px;
+        margin-top: 50px; }
+        body .wrap__banner .banner__text button:hover {
+          background-color: #bfba55; }
+  body .wrap__main__info {
+    width: 100%;
+    max-width: 950px;
+    margin: auto;
+    margin-top: 113px; }
+    body .wrap__main__info .main__info__item .main__info__item__img {
+      margin-top: 80px; }
+      body .wrap__main__info .main__info__item .main__info__item__img img {
+        width: 100%;
+        max-width: 100%; }
+    body .wrap__main__info .main__info__item .text .title {
+      font-size: 30px;
+      font-weight: bold;
+      margin-top: 42px; }
+    body .wrap__main__info .main__info__item .text .feedback {
+      display: flex;
+      align-items: center;
+      margin-top: 17px;
+      margin-bottom: 26px; }
+      body .wrap__main__info .main__info__item .text .feedback p {
+        white-space: pre; }
+      body .wrap__main__info .main__info__item .text .feedback img {
+        width: 46px;
+        max-width: 100%;
+        border-radius: 50%;
+        margin-right: 7px; }
+    body .wrap__main__info .main__info__item .main__text p {
+      color: #777;
+      font-size: 18px;
+      line-height: 24px; }
+    body .wrap__main__info .main__info__item .button {
+      padding-top: 35px;
+      padding-bottom: 60px;
+      border-bottom: 1px solid grey; }
+      body .wrap__main__info .main__info__item .button button {
+        background-color: white;
+        padding: 18px 30px 18px 30px;
+        border: 1px solid;
+        border-radius: 20px;
+        border-color: #777;
+        color: #777; }
+        body .wrap__main__info .main__info__item .button button:hover {
+          background-color: #bfba55; }
+  body footer {
+    background-color: black;
+    color: #777;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 100px;
+    padding-bottom: 90px; }
+    body footer .footer__wrap {
+      max-width: 912px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
+      body footer .footer__wrap .footer__title {
+        font-size: 28px;
+        font-weight: bold;
+        color: white;
+        margin-bottom: 25px; }
+      body footer .footer__wrap .footer__info {
+        max-width: 430px;
+        width: 100%;
+        line-height: 28px; }
+        body footer .footer__wrap .footer__info p:nth-child(3) {
+          margin-top: 31px; }
+      body footer .footer__wrap .footer__contacts {
+        max-width: 325px;
+        width: 100%; }
+        body footer .footer__wrap .footer__contacts p:nth-child(4),
+        body footer .footer__wrap .footer__contacts p:nth-child(3) {
+          margin-top: 25px; }
+
+@media screen and (max-width: 1250px) {
+  body .wrap__banner .banner__text :nth-child(1) {
+    font-size: 35px; } }
+
+/*# sourceMappingURL=style.css.map */
