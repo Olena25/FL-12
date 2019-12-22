@@ -1,0 +1,403 @@
+body {
+  font-family: roboto;
+}
+
+.post-1 {
+  background: #9d27b0;
+}
+
+.post-2 {
+  background: #9bb800;
+}
+
+.post-3 {
+  background: #ed5120;
+}
+
+.post-4 {
+  background: #9d27b0;
+}
+
+.post-5 {
+  background: #2d95bb;
+}
+
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    background-color:  #0b192f;;
+  }
+
+  header {
+    background-color:  #024161;
+  }
+
+  .header__wrap {
+    width: 100%;
+    max-width: 92%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 112px;
+    margin-left: 3%;
+  }
+
+  .header__wrap p {
+    font-size: 40px;
+    font-weight: normal;
+  }
+
+  .header__wrap p span:first-child {
+    color: white;
+  }
+
+  .header__wrap p span:last-child {
+    color: #ed5120;
+  }
+  /* стилі для бургер меню */
+  .burger__menu{
+    display: none;
+  }
+  .burger__menu span{
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: #ffffff;
+    margin-top: 5px;
+  }
+  ul.menu {
+    display: flex;
+    list-style: none;
+  }
+
+  ul.menu a{
+    text-decoration: none;
+    /* margin-left: 60px;  */
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 44px;
+    padding-bottom: 44px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  ul.menu a:hover{
+    background-color:  #08618d;
+  }
+
+  /* banner style */
+  .wrap__banner{
+    position: relative;
+  }
+  .wrap__banner img {
+   
+    margin: 20px 0px 20px 0px;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .banner__text {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 816px;
+    position: absolute;
+    top: 58%;
+    color:white;
+    transform: translate(0%, -58%); 
+    padding-left: 30px;
+  }
+
+  .banner__text p:first-child {
+    font-size: 5vw;
+    margin-bottom: 25px;
+  }
+
+  .banner__text p:last-child {
+    line-height: 25px;
+    font-size: 1.5vw;
+  }
+  /* ------------------------------ */
+  main{
+    display: flex;
+  }
+  .wrap__post {
+    
+    max-width: 75%;
+    width: 100%;
+  }
+  .main__content{
+    display: flex;
+  }
+  .main__content .main__img{
+    align-self: center;
+  }
+  aside{
+    width: 25%;
+    margin-left: 10px;
+    box-sizing: border-box;
+    
+  }
+  aside .main__img{
+    width: 100%;
+  }
+  aside .main__img img{
+    width: 100%;
+    max-width: 100%;
+  }
+  .aside_post{
+    margin-left: 30px;
+    margin-top: 30px;
+    
+  }
+  .aside_post-title{
+    font-size: 27px;
+  }
+  .aside_post .text{
+    font-size: 13px;
+    margin-top: 10px;
+    padding-bottom: 40px;
+    padding-right: 20px;
+  }
+  .aside__item:last-child{
+    margin-top: 20px;
+  }
+  .aside__item{
+    background-color: #FFFFFF;
+  }
+  
+  /* ЗАГАЛЬНІ СТИЛІ ДЛЯ ВСІХ УЛЕМЕНТІВ post */
+ .main__img,.post{
+    width: 50%;
+ }
+ .main__img img{
+  width: 100%;
+  max-width: 100%;
+ }
+ .main__content .main__img img:hover{
+   opacity: 0.5;
+   cursor: pointer;
+ }
+.post{
+  display: flex;
+  color:  white;
+}
+.main__content .post:hover .post-title{
+  opacity: 0.5;
+   cursor: pointer;
+}
+
+.post-title{
+  font-size: 3.5vw;
+  margin-bottom: 26px;
+  margin-top: 42px;
+}
+.post__text{
+  width: 100%;
+  max-width: 339px;
+}
+.post__text .text{
+  font-size: 15px;
+}
+
+.date span {
+  display: block;
+  opacity: 0.2;
+  font-size: 30px;
+}
+
+.date span:first-child{
+  font-size: 50px;
+}
+/* ---------------------стилі для перщого посту і третього */
+.post-1-title,.post-3-title{
+  margin-left: 4vw;
+}
+.post-1 .text,.post-3 .text{
+  margin-left: 4vw;
+}
+.post-1 .date-1, .post-3 .date-3{
+  margin-top: 30px;
+  margin-right: 30px;
+  text-align: right;
+}
+
+/* ---------------------стилі для другого посту і четвертого */
+
+.main__content.second__item .main__img, .main__content.fours__item .main__img{
+  order: 1;
+}
+.post-2,.post-4{
+  padding-right: 10px;
+}
+.post-2 .post-2__text,.post-4 .post-4__text{
+  order: 1;
+  text-align: right;
+}
+.post-2 .date-2, .post-4 .date-4{
+  margin-top: 30px;
+  margin-left: 30px;
+
+}
+/* стилі для пятого посту */
+.post.post-5{
+  width: 100%;
+}
+.post__text.post-5__text{
+  max-width: 100%;
+  margin-left: 30px;
+}
+.post__text.post-5__text .text{
+  margin-bottom: 20px;
+}
+.date.date-5{
+  margin-right: 8px;
+}
+footer{
+  background-color:  #024161;
+  margin-top: 20px;
+  
+}
+.footer__info{
+  max-width: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  color: white;
+  font-size: 1vw;
+  height: 100px;
+  opacity: 0.5;
+
+}
+
+
+
+@media screen and (max-width: 768px){
+  body{
+    width: 98%;
+  }
+  .header__wrap {
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: space-around ;
+    align-items: center;
+    height: 178px;
+    margin-left: 0;
+  }
+  nav{
+    order: -1;
+  }
+  .burger__menu{
+    display: block;
+  }
+  ul.menu{
+    display: none;
+  }
+  .header__wrap p span:last-child {
+    color: #9d27b0;
+    font-weight: 100;
+  }
+  .main__content{
+    flex-direction: column;
+  }
+  .main__img, .post {
+    width: 100%;
+}
+.wrap__post {
+  max-width: 65%;
+}
+aside{
+  width: 35%;
+}
+.aside_post-title {
+  font-size: 4.3vw;
+}
+.aside_post .text {
+  font-size: 2vw;
+}
+.post{
+  padding-bottom: 40px;
+}
+.main__content.second__item .main__img, .main__content.fours__item .main__img{
+  order: 0;
+}
+.post-2,.post-4{
+  padding-right: 0px;
+}
+.post-2 .post-2__text,.post-4 .post-4__text{
+  order: 0;
+  text-align: left;
+    
+}
+.post .post-title {
+  margin-left: 4vw;
+}
+.post .text {
+  margin-left: 4vw;
+}
+.post .date{
+  margin-top: 30px;
+  margin-right: 30px;
+}
+.post-5{
+  flex-direction: column;
+}
+.post__text.post-5__text {
+    max-width: 100%;
+   margin-left: 0px;
+}
+.post-title.post-5-title{
+  font-size: 7vw;
+}
+.date-5{
+  text-align: center;
+}
+.footer__info{
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-size: 2vw;
+  line-height: 15px;
+  margin-bottom: 5px;
+}
+}
+
+@media screen and (max-width: 480px){
+  .wrap__banner img {
+    
+    height: 300px;
+  }
+  
+  .banner__text{
+    max-width: 270px;
+  }
+  .banner__text p:first-child {
+    font-size: 8vw;
+    margin-bottom: 25px;
+  }
+
+  .banner__text p:last-child {
+    line-height: 20px;
+    font-size: 3vw;
+  }
+  main{
+    flex-direction: column;
+  }
+  .wrap__post {
+    max-width: 100%;
+  }
+  aside{
+    width: 100%;
+    margin-left: 0;
+  }
+}
