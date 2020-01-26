@@ -1,0 +1,23 @@
+* {
+    list-style: none ;
+}
+
+p{
+    display: inline;
+   
+}
+.title-of-elements + ul {
+     display: none;   
+}
+
+.title-of-elements{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.title-of-elements:hover{
+ background: rgb(221, 215, 215);
+}
+.open{
+    display: block !important;
+}
